@@ -1,0 +1,32 @@
+.layout {
+  background: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+
+  .sidebar {
+    background: #e09f9f;
+    width: 48px;
+    flex-shrink: 0;
+  }
+  
+  .chat {
+    background: #a2c183;
+    border-radius: 6px 0px 0px 0px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-width: 1px 1px 0px 1px;
+    flex-basis: 382px;
+    min-width: 267px;
+  }
+  
+  .conversation {
+    background: #6dc4d7;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-width: 1px 0px 1px 0px;
+    flex: 1 0 auto;
+    min-width: 267px;
+  }
+}
+
