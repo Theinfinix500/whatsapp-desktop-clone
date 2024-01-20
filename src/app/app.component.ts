@@ -10,11 +10,12 @@ import {
   ionCallOutline,
   ionPersonCircleOutline
 } from '@ng-icons/ionicons';
+import { ChatsComponent } from './components/chats/chats.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, NgIconComponent],
+  imports: [CommonModule, RouterOutlet, NgIconComponent, ChatsComponent],
   providers: [
     provideIcons({
       ionSettingsOutline,
