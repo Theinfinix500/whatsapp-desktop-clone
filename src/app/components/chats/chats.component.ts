@@ -1,12 +1,51 @@
 import { Component } from '@angular/core';
+import { NgIconComponent, provideIcons } from '@ng-icons/core';
+import {
+  ionSearchOutline,
+  ionFilterOutline,
+  ionCreateOutline,
+  ionCheckmarkDoneOutline,
+  ionPushOutline,
+} from '@ng-icons/ionicons';
+import { ChatCardComponent } from '../chat-card/chat-card.component';
 
 @Component({
   selector: 'app-chats',
   standalone: true,
-  imports: [],
+  imports: [NgIconComponent, ChatCardComponent],
+  providers: [
+    provideIcons({
+      ionSearchOutline,
+      ionFilterOutline,
+      ionCreateOutline,
+      ionCheckmarkDoneOutline,
+      ionPushOutline,
+    }),
+  ],
   templateUrl: './chats.component.html',
-  styleUrl: './chats.component.scss'
+  styleUrl: './chats.component.scss',
 })
 export class ChatsComponent {
-
+  chatMessages: any[] = [
+    {
+      id: 1,
+      sender: 'Babe',
+      profilePicture: Math.floor((Math.random() * 16) + 1),
+      received: true,
+      read: true,
+      pinned: true,
+      receivedDate: new Date(),
+      lastMessage: 'babe ana fdar',
+    },
+    {
+      id: 2,
+      sender: 'Oussa',
+      profilePicture: Math.floor((Math.random() * 16) + 1),
+      received: true,
+      read: false,
+      pinned: false,
+      receivedDate: new Date(),
+      lastMessage: '10 min wana m3ak',
+    },
+  ];
 }

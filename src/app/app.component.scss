@@ -4,12 +4,8 @@
   overflow: hidden;
   display: flex;
 
-  ng-icon {
-    color: #373737;
-  }
-
   .sidebar {
-    background: #F3F3F3;
+    background: #f3f3f3;
     width: 48px;
     flex-shrink: 0;
     display: flex;
@@ -20,7 +16,7 @@
   }
 
   .chat {
-    background: #a2c183;
+    background: white;
     border-style: solid;
     border-color: #eaeaea;
     border-width: 1px 1px 0px 1px;
@@ -44,7 +40,7 @@
 }
 
 .sidemenu-icon {
-  padding: 10px 12px;
+  padding: 8px 10px;
   border-radius: 4px;
   display: flex;
   align-items: center;

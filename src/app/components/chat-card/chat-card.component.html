@@ -1,0 +1,16 @@
+<div class="chats__card">
+  <div class="chats__card__picture">
+    <img [src]="'assets/images/pictures/' + chat.profilePicture + '.jpg'" alt="profile_picture">
+  </div>
+  <div class="chats__card__details">
+    <span class="chats__card__contact">{{ chat.sender }}</span>
+    <div class="chats__card__last-message">
+      <ng-icon name="ionCheckmarkDoneOutline"></ng-icon>
+      <span>{{ chat.lastMessage }}</span>
+    </div>
+  </div>
+  <div class="chats__card__time">
+    <div class="_1-35-pm">{{ chat.receivedDate | date:"shortTime"}}</div>
+    <ng-icon name="ionPushOutline"></ng-icon>
+  </div>
+</div>
