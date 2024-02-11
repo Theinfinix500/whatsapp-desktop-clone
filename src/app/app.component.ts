@@ -8,7 +8,7 @@ import {
   ionStarOutline,
   ionChatbubbleEllipsesOutline,
   ionCallOutline,
-  ionPersonCircleOutline
+  ionPersonCircleOutline,
 } from '@ng-icons/ionicons';
 import { ChatsComponent } from './components/chats/chats.component';
 
@@ -23,7 +23,7 @@ import { ChatsComponent } from './components/chats/chats.component';
       ionStarOutline,
       ionChatbubbleEllipsesOutline,
       ionCallOutline,
-      ionPersonCircleOutline
+      ionPersonCircleOutline,
     }),
   ],
   templateUrl: './app.component.html',
