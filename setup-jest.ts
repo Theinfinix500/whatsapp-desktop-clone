@@ -1,3 +1,3 @@
 import 'jest-preset-angular/setup-jest';
-import '@testing-library/jest-dom';
 import './jest-global-mocks';
+import '@testing-library/jest-dom';
