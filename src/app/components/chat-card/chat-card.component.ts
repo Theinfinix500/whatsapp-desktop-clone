@@ -1,5 +1,5 @@
 import { DatePipe } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { ionCheckmarkDoneOutline, ionPushOutline } from '@ng-icons/ionicons';
 
@@ -17,5 +17,6 @@ import { ionCheckmarkDoneOutline, ionPushOutline } from '@ng-icons/ionicons';
   styleUrl: './chat-card.component.scss',
 })
 export class ChatCardComponent {
-  @Input() chat:any;
+  @Input() chat: any;
+  @Output() chatClicked: EventEmitter<any> = new EventEmitter();
 }

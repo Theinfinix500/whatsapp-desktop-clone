@@ -1,6 +1,9 @@
-<div class="chats__card">
+<div data-testid="chat-card-wrapper" class="chats__card" (click)="chatClicked.emit()">
   <div class="chats__card__picture">
-    <img [src]="'assets/images/pictures/' + chat.profilePicture + '.jpg'" alt="profile_picture">
+    <img
+      [src]="'assets/images/pictures/' + chat.profilePicture + '.jpg'"
+      alt="profile_picture"
+    />
   </div>
   <div class="chats__card__details">
     <span class="chats__card__contact">{{ chat.sender }}</span>
@@ -10,7 +13,7 @@
     </div>
   </div>
   <div class="chats__card__time">
-    <div class="_1-35-pm">{{ chat.receivedDate | date:"shortTime"}}</div>
+    <div class="_1-35-pm">{{ chat.receivedDate | date : "shortTime" }}</div>
     <ng-icon name="ionPushOutline"></ng-icon>
   </div>
 </div>
