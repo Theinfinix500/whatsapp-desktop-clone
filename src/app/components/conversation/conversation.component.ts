@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-conversation',
+  selector: 'wtspdk-conversation',
   standalone: true,
   imports: [],
   templateUrl: './conversation.component.html',

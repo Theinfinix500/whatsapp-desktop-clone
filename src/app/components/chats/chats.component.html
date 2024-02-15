@@ -3,6 +3,7 @@
     <div class="chats__actions">
       <div class="chats__title">Chats</div>
       <ng-icon name="ionCreateOutline"></ng-icon>
+      <!-- TODO implement filter menu -->
       <ng-icon name="ionFilterOutline"></ng-icon>
     </div>
     <div class="chats__seach-input">
@@ -13,8 +14,8 @@
 
   <div>
     <div class="chats__list">
-      @for (chat of chatMessages; track chat.id) {
-      <app-chat-card [chat]="chat"></app-chat-card>
+      @for (chat of chatMessages | async; track chat.id) {
+      <wtspdk-chat-card [chat]="chat"></wtspdk-chat-card>
       }
     </div>
   </div>

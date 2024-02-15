@@ -1,0 +1,22 @@
+{
+  "chats": [
+    {
+      "sender": "Omar abouloumoum",
+      "profilePicture": "",
+      "received": true,
+      "read": true,
+      "pinned": true,
+      "receivedDate": "2024-02-15T20:58:18.233Z",
+      "lastMessage": "safi inchallah"
+    },
+    {
+      "sender": "Oussa",
+      "profilePicture": "",
+      "received": true,
+      "read": false,
+      "pinned": false,
+      "receivedDate": "2024-02-15T20:58:18.233Z",
+      "lastMessage": "10 min wana m3ak"
+    }
+  ]
+}

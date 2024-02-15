@@ -4,7 +4,7 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { ionCheckmarkDoneOutline, ionPushOutline } from '@ng-icons/ionicons';
 
 @Component({
-  selector: 'app-chat-card',
+  selector: 'wtspdk-chat-card',
   standalone: true,
   imports: [NgIconComponent, DatePipe],
   providers: [
