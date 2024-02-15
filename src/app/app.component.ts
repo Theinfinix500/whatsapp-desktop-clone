@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NgIconComponent, NgIconsModule, provideIcons } from '@ng-icons/core';
+import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import {
-  ionSettingsOutline,
   ionArchiveOutline,
-  ionStarOutline,
-  ionChatbubbleEllipsesOutline,
   ionCallOutline,
+  ionChatbubbleEllipsesOutline,
   ionPersonCircleOutline,
+  ionSettingsOutline,
+  ionStarOutline,
 } from '@ng-icons/ionicons';
 import { ChatsComponent } from './components/chats/chats.component';
 
@@ -31,4 +31,18 @@ import { ChatsComponent } from './components/chats/chats.component';
 })
 export class AppComponent {
   title = 'whatsapp-clone';
+
+  constructor() {
+    const names = ['omar', 'abdelali', 'othmane'];
+
+    console.log(this.searchByName(names, 'a'));
+  }
+
+  searchByName(names: string[], searchTerm: string) {
+    const searchedItems = names.filter((name) => name.startsWith(searchTerm));
+    if(searchedItems.length) {
+      return searchedItems
+    }
+    return 'Item not found!'
+  }
 }

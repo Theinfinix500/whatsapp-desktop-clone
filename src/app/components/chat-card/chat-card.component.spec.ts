@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/angular';
+import '@testing-library/jest-dom';
 import { ChatCardComponent } from './chat-card.component';
 
 const chatClickedSpy = jest.fn();
@@ -26,7 +27,7 @@ const config = {
 describe('ChatCardComponent', () => {
   test('should render component', async () => {
     const chatCardComponent = await render(ChatCardComponent, config);
-    expect(chatCardComponent.debugElement.componentInstance).toBeDefined();
+    expect(chatCardComponent.debugElement.componentInstance).toBeTruthy();
   });
 
   test('should emit chatClicked when chat card gets clicked', async () => {
